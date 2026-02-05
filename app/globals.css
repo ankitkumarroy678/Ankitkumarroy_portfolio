@@ -107,3 +107,12 @@ html {
   animation: popOut 0.35s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   transform-origin: center; /* ensure it pops from the center, not a side */
 }
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+}

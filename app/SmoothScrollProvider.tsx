@@ -3,28 +3,30 @@
 import { ReactNode, useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
 
+interface SmoothScrollProviderProps {
+  children: ReactNode;
+}
+
 export default function SmoothScrollProvider({
   children,
-}: {
-  children: ReactNode;
-}) {
+}: SmoothScrollProviderProps) {
   useEffect(() => {
-    if (window.innerWidth < 768) return; // disable on mobile
-
     const lenis = new Lenis({
-      duration: 1.2,
-      easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      duration: 0.9,
       smoothWheel: true,
+      easing: (t: number): number => t,
     });
 
-    const raf = (time: number) => {
+    const raf = (time: number): void => {
       lenis.raf(time);
       requestAnimationFrame(raf);
     };
 
     requestAnimationFrame(raf);
 
-    return () => lenis.destroy();
+    return (): void => {
+      lenis.destroy();
+    };
   }, []);
 
   return <>{children}</>;
