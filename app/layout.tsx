@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "next-themes";
+import SmoothScrollProvider from "./SmoothScrollProvider";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,9 +19,11 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className="font-sans antialiased">
         <ThemeProvider attribute="class" enableSystem defaultTheme="system">
-          <Navbar />
-          {children}
-          <Footer />
+          <SmoothScrollProvider>
+            <Navbar />
+            {children}
+            <Footer />
+          </SmoothScrollProvider>
         </ThemeProvider>
       </body>
     </html>

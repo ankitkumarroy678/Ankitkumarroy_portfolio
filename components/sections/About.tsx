@@ -17,7 +17,7 @@ export default function About() {
   ];
 
   return (
-    <section ref={ref} id="about" className="w-full">
+    <section ref={ref} id="about" className="scroll-mt-7 md:scroll-mt-1">
       <div className="min-h-screen flex items-center">
         <div className="w-full max-w-7xl mx-auto px-4 pt-5 sm:px-6 lg:px-16 space-y-12">
           {/* TITLE */}

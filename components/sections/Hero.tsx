@@ -31,7 +31,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section id="home">
+    <section id="home" className="scroll-mt-5">
       <div className="relative min-h-screen w-full flex items-center justify-center px-4">
         <div className="flex flex-col items-center text-center max-w-3xl">
           <div

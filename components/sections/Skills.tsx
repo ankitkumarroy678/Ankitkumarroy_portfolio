@@ -75,14 +75,15 @@ export default function Skills() {
   }, []);
 
   return (
-    <section ref={ref} id="skills" className="scroll-mb-10">
+    <section ref={ref} id="skills" className="scroll-mt-1">
       <div className="min-h-screen w-full px-4 sm:px-6">
         <div className="flex flex-col justify-center items-center space-y-10">
           <div
-            className={`transition-all  duration-1200 ease-[cubic-bezier(0.16,1,0.3,1)] ${isVisible
-              ? "translate-y-0 opacity-100 scale-100"
-              : "translate-y-12 opacity-0 scale-95"
-              } relative items-center mt-13`}
+            className={`transition-all  duration-1200 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+              isVisible
+                ? "translate-y-0 opacity-100 scale-100"
+                : "translate-y-12 opacity-0 scale-95"
+            } relative items-center mt-13`}
           >
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-base text-center">
               Skill & Expertise
@@ -93,8 +94,9 @@ export default function Skills() {
             <div>
               <div className="space-y-5">
                 <h1
-                  className={`inline-block delay-200 duration-300 ${isVisible ? "animate-pop" : "scale-0 opacity-0"
-                    }`}
+                  className={`inline-block delay-200 duration-300 ${
+                    isVisible ? "animate-pop" : "scale-0 opacity-0"
+                  }`}
                 >
                   Technical Skills
                 </h1>
@@ -118,15 +120,17 @@ export default function Skills() {
                       </p>
                     </div>
                     <div
-                      className={`w-full dark:bg-[#3a3a3a] bg-[#939393] rounded-full h-2 overflow-hidden transition-all duration-700 ease-out ${animate
-                        ? "opacity-100 scale-x-100"
-                        : "opacity-0 scale-x-95"
-                        }`}
+                      className={`w-full dark:bg-[#3a3a3a] bg-[#939393] rounded-full h-2 overflow-hidden transition-all duration-700 ease-out ${
+                        animate
+                          ? "opacity-100 scale-x-100"
+                          : "opacity-0 scale-x-95"
+                      }`}
                       style={{ transitionDelay: animate ? "0ms" : "0ms" }}
                     >
                       <div
-                        className={`dark:bg-white bg-black h-2 rounded-full transition-all duration-1000 ease-out ${animate ? "w-[95%]" : "w-0"
-                          } `}
+                        className={`dark:bg-white bg-black h-2 rounded-full transition-all duration-1000 ease-out ${
+                          animate ? "w-[95%]" : "w-0"
+                        } `}
                         style={{ transitionDelay: animate ? "200ms" : "0ms" }}
                       ></div>
                     </div>
@@ -151,14 +155,16 @@ export default function Skills() {
                     </div>
                     <div
                       ref={ref}
-                      className={`w-full dark:bg-[#3a3a3a] bg-[#939393] rounded-full h-2 overflow-hidden transition-all duration-700 ease-out ${animate
-                        ? "opacity-100 scale-x-100"
-                        : "opacity-0 scale-x-95"
-                        }`}
+                      className={`w-full dark:bg-[#3a3a3a] bg-[#939393] rounded-full h-2 overflow-hidden transition-all duration-700 ease-out ${
+                        animate
+                          ? "opacity-100 scale-x-100"
+                          : "opacity-0 scale-x-95"
+                      }`}
                     >
                       <div
-                        className={`dark:bg-white bg-black h-2 rounded-full transition-all duration-1000 ease-out ${animate ? "w-[92%]" : "w-0"
-                          } `}
+                        className={`dark:bg-white bg-black h-2 rounded-full transition-all duration-1000 ease-out ${
+                          animate ? "w-[92%]" : "w-0"
+                        } `}
                       ></div>
                     </div>
                   </div>
@@ -182,14 +188,16 @@ export default function Skills() {
                     </div>
                     <div
                       ref={ref}
-                      className={`w-full dark:bg-[#3a3a3a] bg-[#939393] rounded-full h-2 overflow-hidden transition-all duration-700 ease-out ${animate
-                        ? "opacity-100 scale-x-100"
-                        : "opacity-0 scale-x-95"
-                        }`}
+                      className={`w-full dark:bg-[#3a3a3a] bg-[#939393] rounded-full h-2 overflow-hidden transition-all duration-700 ease-out ${
+                        animate
+                          ? "opacity-100 scale-x-100"
+                          : "opacity-0 scale-x-95"
+                      }`}
                     >
                       <div
-                        className={`dark:bg-white bg-black h-2 rounded-full transition-all duration-1000 ease-out ${animate ? "w-[88%]" : "w-0"
-                          } `}
+                        className={`dark:bg-white bg-black h-2 rounded-full transition-all duration-1000 ease-out ${
+                          animate ? "w-[88%]" : "w-0"
+                        } `}
                       ></div>
                     </div>
                   </div>
@@ -216,14 +224,16 @@ export default function Skills() {
                     </div>
                     <div
                       ref={ref}
-                      className={`w-full dark:bg-[#3a3a3a] bg-[#939393] rounded-full h-2 overflow-hidden transition-all duration-700 ease-out ${animate
-                        ? "opacity-100 scale-x-100"
-                        : "opacity-0 scale-x-95"
-                        }`}
+                      className={`w-full dark:bg-[#3a3a3a] bg-[#939393] rounded-full h-2 overflow-hidden transition-all duration-700 ease-out ${
+                        animate
+                          ? "opacity-100 scale-x-100"
+                          : "opacity-0 scale-x-95"
+                      }`}
                     >
                       <div
-                        className={`dark:bg-white bg-black h-2 rounded-full transition-all duration-1000 ease-out ${animate ? "w-[85%]" : "w-0"
-                          } `}
+                        className={`dark:bg-white bg-black h-2 rounded-full transition-all duration-1000 ease-out ${
+                          animate ? "w-[85%]" : "w-0"
+                        } `}
                       ></div>
                     </div>
                   </div>
@@ -247,14 +257,16 @@ export default function Skills() {
                     </div>
                     <div
                       ref={ref}
-                      className={`w-full dark:bg-[#3a3a3a] bg-[#939393] rounded-full h-2 overflow-hidden transition-all duration-700 ease-out ${animate
-                        ? "opacity-100 scale-x-100"
-                        : "opacity-0 scale-x-95"
-                        }`}
+                      className={`w-full dark:bg-[#3a3a3a] bg-[#939393] rounded-full h-2 overflow-hidden transition-all duration-700 ease-out ${
+                        animate
+                          ? "opacity-100 scale-x-100"
+                          : "opacity-0 scale-x-95"
+                      }`}
                     >
                       <div
-                        className={`dark:bg-white bg-black h-2 rounded-full transition-all duration-1000 ease-out ${animate ? "w-[90%]" : "w-0"
-                          } `}
+                        className={`dark:bg-white bg-black h-2 rounded-full transition-all duration-1000 ease-out ${
+                          animate ? "w-[90%]" : "w-0"
+                        } `}
                       ></div>
                     </div>
                   </div>
@@ -278,14 +290,16 @@ export default function Skills() {
                     </div>
                     <div
                       ref={ref}
-                      className={`w-full dark:bg-[#3a3a3a] bg-[#939393] rounded-full h-2 overflow-hidden transition-all duration-700 ease-out ${animate
-                        ? "opacity-100 scale-x-100"
-                        : "opacity-0 scale-x-95"
-                        }`}
+                      className={`w-full dark:bg-[#3a3a3a] bg-[#939393] rounded-full h-2 overflow-hidden transition-all duration-700 ease-out ${
+                        animate
+                          ? "opacity-100 scale-x-100"
+                          : "opacity-0 scale-x-95"
+                      }`}
                     >
                       <div
-                        className={`dark:bg-white bg-black h-2 rounded-full transition-all duration-1000 ease-out ${animate ? "w-[90%]" : "w-0"
-                          } `}
+                        className={`dark:bg-white bg-black h-2 rounded-full transition-all duration-1000 ease-out ${
+                          animate ? "w-[90%]" : "w-0"
+                        } `}
                       ></div>
                     </div>
                   </div>
@@ -295,8 +309,9 @@ export default function Skills() {
             <div>
               <div className="space-y-8">
                 <h1
-                  className={`inline-block delay-200 duration-300 ${isVisible ? "animate-pop" : "scale-0 opacity-0"
-                    }`}
+                  className={`inline-block delay-200 duration-300 ${
+                    isVisible ? "animate-pop" : "scale-0 opacity-0"
+                  }`}
                 >
                   Tools & Technologies
                 </h1>
@@ -317,7 +332,9 @@ export default function Skills() {
                       <div className="transition-transform duration-300 hover:scale-125">
                         {tool.icon}
                       </div>
-                      <p className="text-sm text-center mt-2 transition-colors duration-300 hover:text-orange-600 dark:hover:text-blue-400">{tool.name}</p>
+                      <p className="text-sm text-center mt-2 transition-colors duration-300 hover:text-orange-600 dark:hover:text-blue-400">
+                        {tool.name}
+                      </p>
                     </div>
                   ))}
                 </div>

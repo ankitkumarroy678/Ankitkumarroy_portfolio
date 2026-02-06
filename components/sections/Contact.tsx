@@ -140,8 +140,8 @@ export default function Contact() {
   };
 
   return (
-    <section ref={ref} id="contact">
-      <div className="h-fit w-full pb-10 px-4 sm:px-6">
+    <section ref={ref} id="contact" className="scroll-mb-1">
+      <div className="h-fit w-full pb-10 px-4 sm:px-6 ">
         <div className="flex flex-col justify-center items-center space-y-9">
           <div
             className={`transition-all  duration-1200 ease-[cubic-bezier(0.16,1,0.3,1)] ${

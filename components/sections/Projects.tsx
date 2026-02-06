@@ -10,7 +10,7 @@ export default function Projects() {
   });
 
   return (
-    <section ref={ref} id="projects" className="scroll-mt-3">
+    <section ref={ref} id="projects" className="scroll-mt-1">
       <div className="min-h-screen w-full">
         <div className="flex flex-col justify-center items-center px-4 sm:px-6">
           {/* TITLE */}
