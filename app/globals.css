@@ -68,10 +68,6 @@
   }
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 @keyframes float {
   0% {
     transform: translateY(0);
@@ -106,13 +102,4 @@ html {
 .animate-pop {
   animation: popOut 0.35s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   transform-origin: center; /* ensure it pops from the center, not a side */
-}
-
-html,
-body {
-  height: 100%;
-}
-
-body {
-  overflow: hidden;
 }
